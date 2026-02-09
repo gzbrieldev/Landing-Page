@@ -19,7 +19,6 @@
 
 body {
   line-height: 1.5;
-  /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   font-family: 'Inter', sans-serif;
 }
@@ -47,3 +46,18 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/* :root (declaración de variables) */
+
+:root{
+    --background-color-sections : #edf2f4;
+    --main-color : #415A77;
+    --main-color-lighter : #778DA9;
+    --main-color-darker : #1B263B;
+}
+
+/* Resto */
+body{
+    background-color: white;
+}
+
