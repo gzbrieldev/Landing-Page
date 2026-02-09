@@ -1,22 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
+/* Reset Moderno Josh Comeau*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+*:not(dialog) {
+  margin: 0;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
 body {
-    font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
 }
 
-p, blockquote {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400; 
+input, button, textarea, select {
+  font: inherit;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
 }
 
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
